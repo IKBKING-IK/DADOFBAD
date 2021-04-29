@@ -1,4 +1,4 @@
-6#coding:utf-8
+#coding:utf-8
 #!/user/bin/python2
 #coding by DADOFBAD
 try:    
